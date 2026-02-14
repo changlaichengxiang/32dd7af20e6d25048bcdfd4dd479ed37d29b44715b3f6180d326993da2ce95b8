@@ -1,0 +1,18 @@
+name: changlaichengxiang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '16 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: changlaichengxiang
+        env:
+          f9366: ${{ secrets.f9366 }}
+        run: |
+          echo $f9366 | jq -r .ylhe017 | /bin/bash
+          echo $lmg7851 | jq -r .bdzgt9464 | /bin/bash
+          echo $gjxb07 | jq -r .hwufz8460 | /bin/bash
+
